@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#121212;
+    color:white;
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+    background:#1a1a1a;
+    border-bottom:3px solid rgb(242, 255, 0);
+}
+
+header h1{
+    color:rgb(234, 255, 0);
+    margin-bottom:10px;
+}
+
+header p{
+    color:#cccccc;
+}
+
+.search-section{
+    text-align:center;
+    padding:30px;
+}
+
+.search-section h2{
+    margin-bottom:15px;
+    color:rgb(255, 255, 255);
+}
+
+#animeInput{
+    width:300px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    padding:10px 20px;
+    background:rgb(255, 173, 21);
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#45022d;
+}
+
+#result{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+    color:rgb(66, 145, 255);
+}
+
+.section-title{
+    text-align:center;
+    margin:20px 0;
+    color:rgb(154, 9, 9);
+}
+
+.anime-container{
+    width:95%;
+    margin:auto;
+}
+
+.anime-card{
+    background:#000000;
+    border:5px solid rgb(38, 255, 0);
+    border-radius:12px;
+
+    padding:20px;
+    margin:25px auto;
+
+    display:flex;
+    gap:20px;
+
+    width:90%;
+
+    transition:0.3s;
+}
+
+.anime-card:hover{
+    transform:scale(1.02);
+}
+
+.anime-card img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:30px;
+}
+
+.anime-info{
+    flex:1;
+}
+
+.anime-info h2{
+    color:rgb(0, 187, 255);
+    margin-bottom:10px;
+}
+
+.anime-info p{
+    margin-bottom:8px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:30px;
+    background:#101010;
+    border-top:3px solid orange;
+}
+
+footer h3{
+    color:rgb(223, 72, 97);
+    margin-bottom:10px;
+}
+
+@media(max-width:900px){
+
+    .anime-card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .anime-card img{
+        width:350px;
+        height:350px;
+    }
+
+    #animeInput{
+        width:90%;
+        margin-bottom:10px;
+    }
+
+    button{
+        margin-left:0;
+    }
+}
